@@ -1,0 +1,47 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+</head>
+<body>
+	<center>
+		<h2 id="title" class="focus-in-contract-bck">Php Array Generator</h2>
+		<label>Name of the array</label>
+		<br>
+		<input type="text" id="array_name">
+		<br>
+		<label>Type of the array</label>
+		<br>
+		<select class="array_type" id="array_type" onchange="array_function()">
+		<option value="normal">Normal</option>
+		<option value="associative">Associative</option>
+		</select>
+		<br><br>
+		<textarea id="option_values" rows="10" cols="50" placeholder="Values of The Array"></textarea>
+		<br>
+		<div id="normal_array">
+		<label>Values Seperator</label>
+		<br>
+		<select class="seperator" id="seperator">
+		<option value=",">Comma(,)</option>
+		<option value="0" selected="selected">New Line(\n)</option>
+		<option value="/">Backslash(/)</option>
+		</select>
+		</div>
+		<div id="associative_array" style="display: none;">
+		<p>Seperate the Keys and the values of the array with a Comma(,).Leave a new line for each new key and value</p>
+		<p>EXAMPLE :  <br>key,value<br>
+					  key2,value2<br>
+    				  key3,value3<br>
+    	</p>
+		</div>
+		<br><br>
+		<div class="button_cont" align="center"><a id="create" class="button" href="" rel="nofollow noopener">Submit</a></div>
+		<br><br>
+		<textarea id="result" rows="10" cols="50" placeholder="Result"></textarea>
+	</center>
+
+</body>
+</html>
+
+<script type="text/javascript" src="scripts.js"></script>
